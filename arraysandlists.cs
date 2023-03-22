@@ -14,14 +14,15 @@ namespace arraysandlists
         {
             if(nums[i]%2==0)
             {
+            Console.WriteLine(nums[i]+"is even");
             even.add(nums[i]);
             }
             else
             {
+             Console.WriteLine(nums[i]+"is odd");
             odd.add(nums[i]);
             }
         }
-
+       }
     }
 }
-
