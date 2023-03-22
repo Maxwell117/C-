@@ -1,4 +1,4 @@
-using system;
+using System;
 
 namespace overloading
 {
@@ -7,8 +7,11 @@ namespace overloading
         static void Main(string[] args)
         {
           int a=add(1,5);
-          int b=add(0.2,0.5);
-          int c=add(1,5,true);
+            Console.WriteLine(a);
+         decimal b = add(0.5m,0.3m);
+         Console.WriteLine(b);
+          add(1,5,true);
+        
         }
 
         static int add(int x, int y)
@@ -16,7 +19,7 @@ namespace overloading
         return x + y;
         }
 
-        static double add(decimal x, decimal y)
+        static decimal add(decimal x, decimal y)
         {
         return x + y;
         }
@@ -26,11 +29,11 @@ namespace overloading
              int z=x+y;
             if(flag==true&&z==1)
             {
-            console.writeline(z+"dollar");
+            Console.WriteLine(z+"dollar");
             }
             else
             {
-                console.writeline(z+"dollars");
+                Console.WriteLine(z+"dollars");
             }
 
         }
