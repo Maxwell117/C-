@@ -1,5 +1,5 @@
 using system;
-using math:
+using math;
 namespace MethodExercise
 {
     public class Program
@@ -12,8 +12,8 @@ namespace MethodExercise
            var rem=a%b;
             double rad=77;
            double area;
-           console.writeline(a"/ "+b+"= " quot);
-           console.writeline(a"% "+b+"= " rem);
+           console.writeline(a+"/ "+b+"= "+ quot);
+           console.writeline(a+"% "+b+"= "+ rem);
         area=  areaofacircle(rad);
           
 
