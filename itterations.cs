@@ -1,4 +1,4 @@
-using system;
+using System;
 
 namespace itterations
 {
@@ -35,12 +35,10 @@ namespace itterations
 
           public static void meth3()
         {
-        string a =console.read();
-        string b =console.read();
-        int ra=convert.toint32(a);
-         int rb=convert.toint32(b);
+           int a=Convert.ToInt32(Console.ReadLine());
+           int b=Convert.ToInt32(Console.ReadLine());
 
-         if(ra==rb)
+         if(a==b)
          {
           Console.WriteLine("equal");  
          }
@@ -52,10 +50,9 @@ namespace itterations
 
         public static void meth4()
         {
-          string a =console.read();
- int ra=convert.toint32(a);
+        int a=Convert.ToInt32(Console.ReadLine());
          
-         if(ra<0)
+         if(a<0)
          {
           Console.WriteLine("negative");  
          }
