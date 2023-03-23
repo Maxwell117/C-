@@ -52,8 +52,8 @@ class Program
              foreach(var ride in vehicles)
              {
              Console.writeline(ride.make+ride.model+ride.year);
-             Vehicle.DriveAbstract();
-             Vehicle.DriveVirtual();
+             ride.DriveAbstract();
+             ride.DriveVirtual();
              }
             // Call each of the drive methods for one car and one motorcycle
 
