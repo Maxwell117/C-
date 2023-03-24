@@ -5,7 +5,7 @@ namespace CollectionsMasterConsoleUI
 {
     class Program
     {
-      
+
         static void Main(string[] args)
         {
             //TODO: Follow the steps provided in the comments under each region.
@@ -22,7 +22,7 @@ namespace CollectionsMasterConsoleUI
             //TODO: Print the first number of the array
             Console.WriteLine(array[0]);
             //TODO: Print the last number of the array            
-             Console.WriteLine(array[49]);
+            Console.WriteLine(array[49]);
             Console.WriteLine("All Numbers Original");
             //UNCOMMENT this method to print out your numbers from arrays or lists
             NumberPrinter(array);
@@ -33,10 +33,10 @@ namespace CollectionsMasterConsoleUI
             /*  1) First way, using a custom method => Hint: Array._____(); 
                 2) Second way, Create a custom method (scroll to bottom of page to find ⬇⬇⬇)
             */
-             ReverseArray(array); 
-              
+            ReverseArray(array);
+
             Console.WriteLine("All Numbers Reversed:");
- 
+
             Console.WriteLine("---------REVERSE CUSTOM------------");
 
             Console.WriteLine("-------------------");
@@ -60,7 +60,7 @@ namespace CollectionsMasterConsoleUI
 
             /*   Set Up   */
             //TODO: Create an integer List
-            List<int> intlist=new List<int>(50);
+            List<int> intlist = new List<int>(50);
 
             //TODO: Print the capacity of the list to the console
             Console.WriteLine(intlist.Capacity);
@@ -69,18 +69,17 @@ namespace CollectionsMasterConsoleUI
             Populater(intlist);
 
             //TODO: Print the new capacity
-             Console.WriteLine(intlist.Capacity);
+            Console.WriteLine(intlist.Capacity);
 
             Console.WriteLine("---------------------");
 
             //TODO: Create a method that prints if a user number is present in the list
             //Remember: What if the user types "abc" accident your app should handle that!
             Console.WriteLine("What number will you search for in the number list?");
-            var check=Convert.ToInt32(Console.ReadLine());
-            if(check=="abc")
-            check=5;
-            NumberChecker(intlist,check);
+            var check = Convert.ToInt32(Console.ReadLine());
             
+            NumberChecker(intlist, check);
+
             Console.WriteLine("-------------------");
 
             Console.WriteLine("All Numbers:");
@@ -110,24 +109,24 @@ namespace CollectionsMasterConsoleUI
 
         private static void ThreeKiller(int[] numbers)
         {
-             for(int i = 0; i < numbers.Length; i++) 
-             {
-                 if(numbers[i]%3==0)
-                 {
-                 numbers[i]=0;
-                 }
-             }
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 3 == 0)
+                {
+                    numbers[i] = 0;
+                }
+            }
         }
 
         private static void OddKiller(List<int> numberList)
         {
-            foreach(number in numberList)
+            foreach (int number in numberList)
             {
-                if(number%2!=0)
-                numberList.Remove(number);
+                if (number % 2 != 0)
+                    numberList.Remove(number);
             }
-            
-            foreach(number in numberList)
+
+            foreach (int number in numberList)
             {
                 Console.WriteLine(number + " is even");
             }
@@ -135,20 +134,20 @@ namespace CollectionsMasterConsoleUI
 
         private static void NumberChecker(List<int> numberList, int searchNumber)
         {
-            foreach(number in numberList)
+            foreach (int number in numberList)
             {
-                if(number==searchNumber)
-                Console.WriteLine(searchNumber + " is present");
+                if (number == searchNumber)
+                    Console.WriteLine(searchNumber + " is present");
             }
         }
 
         private static void Populater(List<int> numberList)
         {
             Random random = new Random();
-            for(int i = 0; i < numberList.capacity; i++) 
+            for (int i = 0; i < numberList.Count; i++)
             {
-            int tok= random.Next(0,50);
-            numberList.Add(tok);
+                int tok = random.Next(0, 50);
+                numberList.Add(tok);
             }
 
         }
@@ -156,20 +155,20 @@ namespace CollectionsMasterConsoleUI
         private static void Populater(int[] array)
         {
             Random random = new Random();
-            for(int i = 0; i < array.Length; i++) 
+            for (int i = 0; i < array.Length; i++)
             {
-            array[i] = random.Next(0,50);
+                array[i] = random.Next(0, 50);
             }
 
-        }        
+        }
 
         private static void ReverseArray(int[] array)
         {
-           Array.Reverse(array);
-           
-            for(int i = 0; i < array.Length; i++) 
+            Array.Reverse(array);
+
+            for (int i = 0; i < array.Length; i++)
             {
-            Console.WriteLine(array[i]);
+                Console.WriteLine(array[i]);
             }
         }
 
