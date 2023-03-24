@@ -1,14 +1,15 @@
 using System;
-namespace CarLotSimulator
+namespace bankaccount
 {
     class Program
     {
         static void Main(string[] args)
         {
- 	 bankaccount bob=new bankaccount();
-      	   bob.balance=300;
-        
-               bob.deposit(500);
+            bankaccount bob = new bankaccount();
+            bob.SetBalance(500);
+            Console.WriteLine(bob.GetBalance());
+
+            bob.Deposit(100);
         }
     }
 }
