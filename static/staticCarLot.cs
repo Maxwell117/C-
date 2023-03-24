@@ -1,13 +1,13 @@
 using System;
 using System.Text;
 using System.Collections.Generic;
-namespace staticexercise
+namespace car
 {
-public class CarLot
-{
+    public class CarLot
+    {
 
-  public static int cnt=0;
-  Public List<Car> lot  {get;set;} =new List<Car>();
+        public static int cnt = 0;
+
   
 }
 }
