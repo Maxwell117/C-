@@ -1,7 +1,7 @@
 using System;
 namespace staticexercise
 {
-internal static class TempConverter
+    internal static class TempConverter
     {
         public static double FahrenheitToCelsius(double fahrenheit)
         {
