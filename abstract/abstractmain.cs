@@ -1,7 +1,7 @@
 using System;
 namespace ConsoleUI
 {
-class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -38,23 +38,27 @@ class Program
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
              */
-            Vehicle vechicle1 = new Car(){Make=”Ford”,year=2003,model=”2x”};
-	Vehicle vechicle2 = new Car(){Make=”Suzuki,year=2011,model=”6xz”};
-            var honda=new Car() {HasTrunk=TRUE};
-            var harley=new Motorcycle(); {HasSideCart=TRUE};
+            Vehicle vehicle1 = new Car() { make ="Ford", year = "2003", model = "2x" };
+            Vehicle vehicle2 = new Car() { make = "Chey", year = "2011", model = "7v" };
+            var honda = new Car() { HasTrunk = true };
+            var harley = new Motorcycle()
+            { HasSideCart = true};
 
-             list<vehicle> vehicles= new list<vehicle>();
-             vehicles.add(harley);
-             vehicles.add(honda);
-	 vehicles.add(vehicle1);
-             vehicles.add(vehicle2);
+            List<Vehicle> v = new List<Vehicle>();
+        
 
-             foreach(var ride in vehicles)
-             {
-             Console.writeline(ride.make+ride.model+ride.year);
-             ride.DriveAbstract();
-             ride.DriveVirtual();
-             }
+            List<Vehicle> vehicles = new List<Vehicle>();
+            vehicles.Add(harley);
+            vehicles.Add(honda);
+            vehicles.Add(vehicle1);
+            vehicles.Add(vehicle2);
+
+            foreach (var ride in vehicles)
+            {
+                Console.WriteLine(ride.make + ride.model + ride.year);
+                ride.DriveAbstract();
+                ride.DriveVirtual();
+            }
             // Call each of the drive methods for one car and one motorcycle
 
             #endregion            
