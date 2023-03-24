@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    abstract class vehicle
+    abstract class Vehicle
     {
-    public string year{get;set;}="def";
-    public string make{get;set;}="def";
-    public string model{get;set;}="def";
+        public string year { get; set; } = "def";
+        public string make { get; set; } = "def";
+        public string model { get; set; } = "def";
 
-   public abstract void driveabstract();
-   public virtual void drivevirtual()
-   {
-   Console.writeline("default drive");
-   }
-   }
+        public abstract void DriveAbstract();
+        public virtual void DriveVirtual()
+        {
+            Console.WriteLine("default drive");
+        }
+
+    }
 }
